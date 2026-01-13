@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal portfolio</title>
+    <!-- Boxicons CDN for icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styl.css" />
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Floating Particles Container -->
+    <div class="particles-container" id="particles-container"></div>
+
+    <!-- Navigation bar -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="active" data-target="home">
+                <i class="bx bx-home-alt"></i>
+                <span class="tooltip">Home</span>
+            </li>
+            <li data-target="achievements">
+                <i class="bx bx-award"></i>
+                <span class="tooltip">Achievements</span>
+            </li>
+            <li data-target="resume">
+                <i class="bx bx-message-detail"></i>
+                <span class="tooltip">Resume</span>
+            </li>
+            <li data-target="portfolio">
+                <i class="bx bx-briefcase-alt-2"></i>
+                <span class="tooltip">Portfolio</span>
+            </li>
+        </ul>
+        <!-- Theme toggle switch -->
+        <div class="theme-toggle" title="Toggle Dark/Light Mode">
+            <input type="checkbox" id="toggle-theme" style="display:none;" />
+            <label for="toggle-theme" class="toggle-label">
+                <i class="bx bx-moon"></i>
+                <i class="bx bx-sun"></i>
+            </label>
+        </div>
+    </nav>
+
+    <!-- Main container -->
+    <div class="container">
+        <div class="box">
+            <!-- Home Section -->
+            <section id="home" class="section home active">
+                <div class="home-info">
+                    <h3>Hello I'am</h3>
+                    <h1 id="typed-name">Aviral Mishra</h1>
+                    <h3><span id="typed-role"></span></h3>
+                    <p class="desc">
+                        I craft meaningful connections between clients and teams, ensuring every project moves with
+                        clarity,
+                        collaboration, and purpose. By blending strategy with communication, I drive engagement that
+                        fuels
+                        growth, builds lasting partnerships, and strengthens the company’s culture of innovation.
+                    </p>
+                    <div class="btn-sci">
+                        <a href="resume.pdf" class="btn" download>Download CV</a>
+                        <div class="sci">
+                            <a href="https://github.com/Aviral-Mishra18" target="_blank" aria-label="Github">
+                                <i class="bx bxl-github"></i>
+                                <span class="tooltip">Github</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aviral-mishra-4b1152280/" target="_blank"
+                                aria-label="Linkedin">
+                                <i class="bx bxl-linkedin"></i>
+                                <span class="tooltip">Linkedin</span>
+                            </a>
+                            <!-- <a href="#" aria-label="Twitter">
+                                <i class="bx bxl-twitter"></i>
+                                <span class="tooltip">Twitter</span>
+                            </a> -->
+                            <!-- <a href="#" aria-label="Youtube">
+                                <i class="bx bxl-youtube"></i>
+                                <span class="tooltip">Youtube</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <div class="img-box home-img">
+                        <img src="Images/2431799.jpg" alt="Aviral Mishra" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements & Certifications Section -->
+            <section id="achievements" class="section achievements">
+                <h2 class="title">Achievements & Certifications</h2>
+                <div class="achievements-container">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="bx bxs-badge-check"></i>
+                        </div>
+                        <h3>Certified C++ Bootcamp</h3>
+                        <p class="achievement-meta">2024</p>
+                        <p class="achievement-desc">
+                            Successfully completed a comprehensive C++ Bootcamp covering Object-Oriented Programming,
+                            Data Structures, Algorithms, and STL with hands-on projects.
+                        </p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="bx bxs-code-block"></i>
+                        </div>
+                        <h3>Web Development Certificate</h3>
+                        <p class="achievement-meta">2024-2025</p>
+                        <p class="achievement-desc">
+                            Completed an intensive Web Development course mastering HTML, CSS, JavaScript, and
+                            React.js for building responsive applications.
+                        </p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="bx bxs-graduation"></i>
+                        </div>
+                        <h3>Bachelor of Computer Application</h3>
+                        <p class="achievement-meta">2024-2027</p>
+                        <p class="achievement-desc">
+                            Pursuing a BCA degree at PSIT College of Higher Education with focus on software
+                            development and emerging technologies.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section with Progress Bars -->
+            <section class="section skills">
+                <h2 class="title">Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h4>HTML5</h4>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h4>CSS3</h4>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h4>JavaScript</h4>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h4>React.js</h4>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h4>Tailwind CSS</h4>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h4>C++</h4>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h4>Python</h4>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h4>Bootstrap</h4>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resume Section -->
+            <section id="resume" class="section resume">
+                <h2 class="title">Resume</h2>
+                <div class="tab-box">
+                    <div class="tab-list resume-list active">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="tab-list resume-list">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="tab-list resume-list">
+                        <h3>Education</h3>
+                    </div>
+                </div>
+                <div class="tab-wrapper">
+                    <!-- Experience Tab -->
+                    <div class="tab-grid resume-box experience active">
+                        <div class="tab-item resume-item">
+                            <h4>2025-Present</h4>
+                            <h4>Engagement Manager</h4>
+                            <h4>Catalyst Crew</h4>
+                            <p>
+                                Spearheaded engagement strategies to enhance client and stakeholder relationships.<br />
+                                Coordinated with cross-functional teams to ensure timely project delivery and alignment
+                                with
+                                organizational goals.<br />
+                                Facilitated communication, onboarding, and community-building initiatives to strengthen
+                                collaboration and retention.<br />
+                                Contributed to business growth by building long-term partnerships and driving engagement
+                                metrics.
+                            </p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2025</h4>
+                            <h4>Frontend Developer</h4>
+                            <p>
+                                Designed and developed interactive, responsive, and accessible user interfaces. Skilled
+                                in
+                                React.js, JavaScript, HTML, CSS, and Tailwind CSS with experience in optimizing
+                                performance
+                                and ensuring cross-browser compatibility.
+                            </p>
+                            <!-- Snake Game card was moved to Portfolio section; removed duplicate here -->
+                        </div>
+                    </div>
+
+                    <!-- Skills Tab -->
+                    <div class="tab-grid resume-box skills">
+                        <div class="tab-item resume-item">
+                            <i class="bx bxl-html5"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class="bx bxl-css3"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class="bx bxl-javascript"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class="bx bxl-bootstrap"></i>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class="bx bxl-python"></i>
+                            <p>Python</p>
+                        </div>
+                    </div>
+
+                    <!-- Education Tab -->
+                    <div class="tab-grid resume-box education">
+                        <div class="tab-item resume-item">
+                            <h4>2024</h4>
+                            <h4>Certified C++ Bootcamp</h4>
+                            <h4>Online Course Platform</h4>
+                            <p>
+                                Successfully completed a Certified C++ Bootcamp, covering fundamentals to advanced
+                                concepts
+                                including Object-Oriented Programming, Data Structures, Algorithms, and Standard
+                                Template
+                                Library (STL). Built multiple hands-on projects and problem-solving exercises.
+                            </p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2024-2025</h4>
+                            <h4>Completed Web Development</h4>
+                            <h4>Online Course</h4>
+                            <p>
+                                I have Successfully completed a comprehensive Web Development course, mastering HTML,
+                                css,javascript, and React.js to build responsive and dynamic web application.
+                            </p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2024-2027</h4>
+                            <h4>Bachelor of Computer Application</h4>
+                            <h4>PSIT College of Higher Education</h4>
+                            <p>
+                                pursuing a Bachelors of Computer Application degree at PSIT College of Higher
+                                Educationa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio" class="section portfolio">
+                <h2 class="title">Portfolio</h2>
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="other">Other</button>
+                </div>
+                <div class="tab-box">
+                    <div class="tab-list portfolio-list active">
+                        <h3>My Work</h3>
+                    </div>
+                    <div class="tab-list portfolio-list">
+                        <h3>My Service</h3>
+                    </div>
+                </div>
+                <div class="tab-wrapper">
+                    <!-- Work Tab -->
+                    <div class="tab-grid portfolio-box work active">
+                        <div class="tab-item portfolio-item" data-category="web">
+                            <div class="work-img">
+                                <img src="Images/images2.png" alt="Frontend Project" />
+                            </div>
+                            <div class="work-info">
+                                <h4>Snake Game</h4>
+                                <p>
+                                    Developed an interactive Snake Game using HTML, CSS, and JavaScript, implementing
+                                    game logic, collision detection, and responsive controls.
+                                </p>
+                                <div class="tech-used">
+                                    <p>HTML5, CSS3, JavaScript</p>
+                                </div>
+                                <div class="portfolio-icon work-icon">
+                                    <a href="https://aviral-mishra18.github.io/Snake-Game" target="_blank"
+                                        aria-label="preview Snake Game">
+                                        <i class="bx bxl-github"></i>
+                                        <span class="tooltip">Snake-Game</span>
+                                    </a>
+                                </div>
+                                <!-- Image gallery for Frontend Project (thumbnails sized to card) -->
+                                <div class="portfolio-images">
+                                    <div class="thumb">
+                                        <img src="Images/images.jpg" alt="Frontend screenshot 1" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-item portfolio-item" data-category="web">
+                    <div class="work-img">
+                        <img src="image 3.jpg" alt="Gym-Website" />
+                    </div>
+                    <div class="work-info">
+                        <h4>Gym Website</h4>
+                        <p>
+                            A complete web application using HTML,CSS,JS frontend and modern styling.
+                            Includes interactive features,
+                            state management, and responsive design with Tailwind CSS.
+                        </p>
+                        <div class="tech-used">
+                            <p>HTML,CSS,JavaScript</p>
+                        </div>
+                        <div class="portfolio-icon work-icon">
+                            <a href="https://aviral-mishra18.github.io/Gym-website/" target="_blank"
+                                aria-label="preview Gym Website">
+                                <i class="bx bxl-github"></i>
+                                <span class="tooltip">Gym website</span>
+                            </a>
+                        </div>
+                        <div class="portfolio-images">
+                            <div class="thumb">
+                                <img src="Images/img.jpg" alt="Gym-Website screenshot 1" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-item portfolio-item" data-category="web">
+                    <div class="work-img">
+                        <img src="Images/image4.jpg" alt="Image-Editor">
+                    </div>
+
+                    <div class="work-info">
+                        <h4>Image-Editor</h4>
+                        <p>
+                            Developed a web-based Image Editor using HTML, CSS, and JavaScript. Features include image
+                            uploading, cropping, resizing, and applying filters with a user-friendly interface.
+                        </p>
+                        <div class="tech-used">
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="portfolio-icon work-icon">
+                            <a href="https://aviral-mishra18.github.io/Image_Editor/" target="_blank"
+                                aria-label="preview Image-Editor">
+                                <i class="bx bxl-github"></i>
+                                <span class="tooltip">Image-Editor</span>
+                            </a>
+                        </div>
+                        <div class="portfolio-images">
+                            <div class="thumb">
+                                <img src="Images/image5.jpg" alt="Gym-Website screenshot 1" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Service Tab -->
+        <div class="tab-grid portfolio-box service">
+            <div class="tab-item portfolio-item service-card">
+                <div class="portfolio-icon service-icon">
+                    <i class="bx bx-code-alt icon"></i>
+                </div>
+                <h4>Web Development</h4>
+                <p>
+                    I build fast, responsive, and scalable web applications using modern technologies like
+                    React.js, Tailwind CSS, and JavaScript. From frontend to full-stack solutions, I create
+                    user-friendly experiences that drive results.
+                </p>
+            </div>
+            <div class="tab-item portfolio-item service-card">
+                <div class="portfolio-icon service-icon">
+                    <i class="bx bx-palette icon"></i>
+                </div>
+                <h4>UI/UX Design</h4>
+                <p>
+                    Crafting intuitive and beautiful user interfaces that enhance user experience. I focus
+                    on
+                    responsive design, accessibility, and visual hierarchy to create interfaces that users
+                    love.
+                </p>
+            </div>
+            <div class="tab-item portfolio-item service-card">
+                <div class="portfolio-icon service-icon">
+                    <i class="bx bx-brush icon"></i>
+                </div>
+                <h4>Design & Branding</h4>
+                <p>
+                    Transform your ideas into compelling visual stories. I provide custom design solutions
+                    for
+                    logos, mockups, and brand identities that make your business stand out.
+                </p>
+            </div>
+            <div class="tab-item portfolio-item service-card">
+                <div class="portfolio-icon service-icon">
+                    <i class="bx bx-briefcase icon"></i>
+                </div>
+                <h4>Freelance Consulting</h4>
+                <p>
+                    Available for freelance projects and consulting work. I help businesses streamline
+                    engagement
+                    strategies and build strong client relationships through effective communication and
+                    planning.
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <h2 class="title">Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Aviral's engagement management skills transformed our client relationships. His strategic
+                    approach and clear communication delivered exceptional results. Highly recommend!"
+                </p>
+                <div class="testimonial-author">
+                    <h4>Rahul Kumar</h4>
+                    <p>Project Lead, Catalyst Crew</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Outstanding frontend developer! Aviral created beautiful, responsive interfaces with clean
+                    code. His attention to detail and problem-solving abilities are remarkable."
+                </p>
+                <div class="testimonial-author">
+                    <h4>Priya Sharma</h4>
+                    <p>UI/UX Designer</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Great collaborator! Aviral's ability to bridge gaps between technical and non-technical
+                    teams
+                    is impressive. He brings clarity and professionalism to every project."
+                </p>
+                <div class="testimonial-author">
+                    <h4>Ananya Patel</h4>
+                    <p>Team Lead, Web Solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section blog">
+        <h2 class="title">Latest Articles</h2>
+        <div class="blog-container">
+            <article class="blog-card">
+                <div class="blog-image">
+                    <i class="bx bxs-code"></i>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">December 15, 2025</span>
+                    <h3>Mastering React Hooks: A Complete Guide</h3>
+                    <p>
+                        Learn how to use React Hooks to write cleaner, more efficient functional components.
+                        Explore useState, useEffect, useContext, and custom hooks with practical examples.
+                    </p>
+                    <a href="#" class="read-more">Read More <i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">
+                    <i class="bx bxs-palette"></i>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">December 10, 2025</span>
+                    <h3>Responsive Design Best Practices in 2025</h3>
+                    <p>
+                        Discover modern techniques for creating responsive websites that work flawlessly across
+                        all devices. Mobile-first approach, flexible grids, and CSS media queries explained.
+                    </p>
+                    <a href="#" class="read-more">Read More <i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">
+                    <i class="bx bxs-rocket"></i>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">December 5, 2025</span>
+                    <h3>Web Performance Optimization Tips</h3>
+                    <p>
+                        Optimize your website's performance with techniques like lazy loading, code splitting,
+                        and
+                        image optimization. Learn how to achieve faster load times and improve SEO rankings.
+                    </p>
+                    <a href="#" class="read-more">Read More <i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2 class="title">Contact</h2>
+        <div class="contact-wrapper">
+            <form class="contact-form" id="contact-form">
+                <h3>Let's Work Together!</h3>
+                <div class="field-box">
+                    <input type="text" id="name" placeholder="Full Name" required />
+                    <input type="email" id="email" placeholder="E-mail" required />
+                    <input type="tel" id="phone" placeholder="Phone Number" required />
+                    <input type="text" id="subject" placeholder="Email Subject" required />
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="contact-btn">
+                    <button type="submit" class="btn">Send Message</button>
+                    <span id="form-status"></span>
+                </div>
+            </form>
+        </div>
+    </section>
+    </div>
+    </div>
+
+    <!-- Link to external JS -->
+    <script src="script.js"></script>
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+    <script>
+        // Initialize EmailJS (Replace with your actual Service ID)
+        emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+    </script>
+</body>
+
+</html>
